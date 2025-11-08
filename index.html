@@ -1,72 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .navbar {
-            background-color: olive;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .nav-links {
-            list-style: none;
-            display: flex;
-            gap: 25px;
-        }
-        .nav-links li {
-            color: white;
-        }
-        .nav-links li:hover {
-            color: grey;
-            cursor: pointer;
-        }
-    
-        .right-part {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-        .phone {
-            color: white;
-        }
-        .button {
-            background-color: red;
-            color: white;
-            padding: 8px 16px;
-        }
-        .button:hover {
-            background-color: cadetblue;
-            cursor: pointer;
-            border-radius: 10px;
-        }
-     
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charitee - Give a Helping Hand</title>
 
-    </style>
+  <!-- Google Fonts: Roboto -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <div class="navbar">
-     <div class="image">
-        <img src="https://preview.colorlib.com/theme/charitee/assets/img/logo/logo.png.webp" alt="">
+  <div class="parent">
+    <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="assets/logo.png.webp" alt="Charitee logo">
     </div>
-    <ul class="nav-links">
-            <li>Home</li>
-            <li>About Us</li>
-            <li>who  Are We</li>
-            <li>Programs</li>
-            <li>Contact Us</li>
-    </ul>
-    <div class="right-part">
-         <h3 class="phone">call us; 98765456</h3>
-         <button class="button">
-            Make A Donation
-         </button>
 
+    <nav>
+      <ul class="nav-links">
+        <li>Home</li>
+        <li>Who We Are?</li>
+        <li>Programs</li>
+        <li>About</li>
+        <li>Blog</li>
+        <li>Contact Us</li>
+      </ul>
+    </nav>
+
+    <div class="nav-right">
+      <p class="phone">Call Us : 0 (78) 675 3674</p>
+      <button class="donate-btn">
+        <img src="assets/heart-solid-full.svg" alt="heart icon">
+        Make A Donation
+      </button>
     </div>
-   </div>
-        
+  </header>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <img src="assets/h1_hero1.jpg.webp" alt="Helping hands" class="hero-bg">
+    <div class="hero-content">
+      <h1>Give a helping hand to those who need it!</h1>
+      <p>When a child gets access to good food, it can change just about everything.</p>
+      <button class="btn">Ongoing Programs</button>
+    </div>
+  </div>
+  <div class="program-block">
+  <div class="program-content-container">
     
-</body>
+    <div class="program-image">
+      <img src="assets/program-image.webp" alt="Homeless woman with cart">
+    </div>
+
+    <div class="program-details">
+      <p class="program-label">Upcoming Program</p>
+      <h2>Donate vitamin B12 supply program</h2>
+      <p class="program-description">
+        When a child gets access to good food, it can change just about everything. Sed do eiusmod tempor incididunt dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+      </p>
+      
+      <div class="program-buttons">
+        <button class="btn-donate-now">Donate Now</button>
+        <button class="btn-view-programs">View Programs</button>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+</body> 
 </html>
