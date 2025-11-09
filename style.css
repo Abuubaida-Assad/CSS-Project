@@ -8,7 +8,7 @@
 
 .parent {
   color: white;
-  background-color: #000;
+  background-color: white;
 }
 
 /* Navbar */
@@ -148,6 +148,7 @@
 .btn:hover {
   background: #3cb5ab;
 }
+/* program block */
 
 .program-block {
  
@@ -241,4 +242,81 @@
 .btn-view-programs:hover {
   background: #ff6b4a;
   color: white;
+}
+/* about-block */
+.about-block {
+ 
+  background-color: white;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.about-content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  max-width: 1200px; 
+  margin: 0 auto; 
+  gap: 60px; 
+}
+.about-image-container {
+    flex-shrink: 0; 
+}
+
+/* Image Column */
+.about-image-container img {
+  height: 493px;
+  
+  width: 576px; 
+  display: block;
+}
+
+/* Text Details Column */
+
+
+.about-lable {
+  font-size: 16px;
+  font-weight: 500;
+  color: #52d1c6; 
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.about-details h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #263B5C;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+
+.about-description {
+  font-size: 16px;
+  color: #777777;
+  line-height: 1.6;
+  margin-bottom: 35px;
+}
+
+.about-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+
+.about-button {
+  background: #ff6b4a; 
+  color: white;
+  padding: 15px 35px;
+  border-radius: 5px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.about-button:hover {
+   background: none;
+  border: 1px solid #f15b43;
+  color: #f15b43;
 }
