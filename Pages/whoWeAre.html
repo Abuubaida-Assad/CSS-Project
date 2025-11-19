@@ -1,4 +1,11 @@
-/* Reset and base styling */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Reset and base styling */
 * {
   margin: 0;
   padding: 0;
@@ -98,7 +105,7 @@
 /* Hero Section */
 .hero {
   position: relative;
-  height: 950px;
+  height: 300px;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -112,14 +119,14 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  /* height: 400px; */
   object-fit: cover;
 }
 
 /* Hero Content */
 .hero-content {
   position: relative;
-  max-width: 600px;
+  max-width: 100%;
   z-index: 1;
   color: white;
   padding: 40px;
@@ -133,7 +140,7 @@
   
 }
 
-.hero-content p {
+/* .hero-content p {
   font-size: 18px;
   margin-bottom: 30px;
   color: #f0f0f0;
@@ -142,7 +149,7 @@
 }
 
 /* Hero Button */
-.btn {
+/* .btn {
   background: #52d1c6;
   color: white;
   padding: 15px 30px;
@@ -155,8 +162,8 @@
 
 .btn:hover {
   background: #3cb5ab;
-}
-/* program block */
+}  */ 
+  /* program block */
 
 .program-block {
  
@@ -251,151 +258,7 @@
   background: #ff6b4a;
   color: white;
 }
-/* about-block */
-.about-block {
- 
-  background-color: white;
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-.about-content-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row-reverse;
-  max-width: 1200px; 
-  margin: 0 auto; 
-  gap: 60px; 
-}
-.about-image-container {
-    flex-shrink: 0; 
-}
-
-/* Image Column */
-.about-image-container img {
-  height: 493px;
-  
-  width: 576px; 
-  display: block;
-}
-
-/* Text Details Column */
-
-
-.about-lable {
-  font-size: 16px;
-  font-weight: 500;
-  color: #52d1c6; 
-  margin-bottom: 5px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.about-details h2 {
-  font-size: 40px;
-  font-weight: 700;
-  color: #263B5C;
-  line-height: 1.2;
-  margin-bottom: 30px;
-}
-
-.about-description {
-  font-size: 16px;
-  color: #777777;
-  line-height: 1.6;
-  margin-bottom: 35px;
-}
-
-.about-buttons {
-  display: flex;
-  gap: 20px;
-}
-.about-button {
-  background: #ff6b4a; 
-  color: white;
-  padding: 15px 35px;
-  border-radius: 5px;
-  font-weight: 600;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-.about-button:hover {
-   background: none;
-  border: 1px solid #f15b43;
-  color: #f15b43;
-}
-.help-block {
- 
-  background-color: bisque;
-  padding-top: 100px;
-  padding-bottom: 100px; 
-}
-
-.help-content-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
- 
-  max-width: 1200px; 
-  margin: 0 auto; 
-  gap: 60px; 
-}
-
-/* Image Column */
-.help-image img {
-  height: 536px;
-  
-  width: 548px; 
-  display: block;
-}
-
-/* Text Details Column */
-.help-details {
-  
-}
-
-.help-label {
-  font-size: 16px;
-  font-weight: 500;
-  color: #52d1c6; 
-  margin-bottom: 5px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.help-details h2 {
-  font-size: 46px;
-  font-weight: 700;
-  color: #263B5C;
-  line-height: 1.2;
-  margin-bottom: 25px;
-}
-
-.help-description {
-  font-size: 18px;
-  color: #777777;
-  line-height: 1.6;
-  margin-bottom: 35px;
-}
-.button {
-    
-  background: #ff6b4a; 
-  color: white;
-  padding: 16px 28px;
-  border-radius: 5px;
-  font-weight: 600;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-.button:hover {
-    background: none;
-  border: 1px solid #f15b43;
-  color: #f15b43;
-}
-/* --- Section Layout & Background --- */
+/* helping today section  */
 
 .helping-today-section {
     position: relative;
@@ -403,7 +266,7 @@
     color: white; 
     text-align: center; 
     /* Set your background image here */
-    background-image: url(assets/helpingtoday1.jpg);
+    background-image: url(/assets/helpingtoday1.jpg);
 }
 
 .content-wrapper {
@@ -463,29 +326,103 @@
     font-size: 14px;
     line-height: 1.6;
 }
-footer {
-         background-color:#263B5C;
-         color: white;
-         display: flex;
-         justify-content: space-around;
-         align-items: flex-start;
-        padding: 50px 0;
-      }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <header class="navbar">
+    <div class="logo">
+      <img src="/assets/logo.png.webp" alt="Charitee logo">
+    </div>
 
-      footer div {
-         width: 250px;
-      }
+    <nav>
+      <ul class="nav-links">
+        <li>Home</li>
+        <li>Who Are We ?</li>
+        <li>Programs</li>
+        <li>About</li>
+        <li>Blog</li>
+        <li>Contact Us</li>
+      </ul>
+    </nav>
 
-      ul {
-         list-style: none;
-         padding: 0;
-      }
-      #section1 {
-    background-color: #F15B43;
-    color: #fff ;
-    padding: 11px 20px;
-    font-size: 16px;
-    border-radius: 0px;
-    font-weight: 400;
-    cursor: pointer;
-      }
+    <div class="nav-right">
+      <p class="phone">Call Us : 0 (78) 675 3674</p>
+      <button class="donate-btn">
+        <img src="/assets/heart-solid-full.svg" alt="heart icon">
+        Make A Donation
+      </button>
+    </div>
+  </header>
+    <!-- Hero Section -->
+  <div class="hero">
+    <img src="/assets/h2_hero1.jpg.webp" alt="Helping hands" class="hero-bg">
+    <div class="hero-content">
+      <h1>About Us</h1>
+      <!-- <p>When a child gets access to good food, it can change just about everything.</p>
+      <button class="btn">Ongoing Programs</button> -->
+    </div>
+  </div>
+    <!-- program-block -->
+  <div class="program-block">
+  <div class="program-content-container">
+    
+    <div class="program-image">
+      <img src="/assets/program-image.webp" alt="Homeless woman with cart">
+    </div>
+
+    <div class="program-details">
+      <p class="program-label">Upcoming Program</p>
+      <h2>Donate vitamin B12 supply program</h2>
+      <p class="program-description">
+        When a child gets access to good food, it can change just about everything. Sed do eiusmod tempor incididunt dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+      </p>
+      
+      <div class="program-buttons">
+        <button class="btn-donate-now">Donate Now</button>
+        <button class="btn-view-programs">View Programs</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- helping today section  -->
+<div class="helping-today-section">
+        <div class="background-image">
+            </div>
+        <div class="content-wrapper">
+            <p class="pre-heading">Helping Today</p>
+            <h2 class="main-heading">How we help people</h2>
+            
+            <div class="service-container">
+                
+                <div class="service-item">
+                    <img src="/assets/services1.svg" alt="Pure Food & Water Icon" class="service-icon">
+                    <h3 class="service-title">Pure Food & Water</h3>
+                    <p class="service-description">
+                        Odio aliquet, fringilla odio eget, tincidunt nunc duis aliquet pulvinar ante employees and organizations to support.
+                    </p>
+                </div>
+                
+                <div class="service-item">
+                    <img src="/assets/services2.svg" alt="Health & Medicine Icon" class="service-icon">
+                    <h3 class="service-title">Health & Medicine</h3>
+                    <p class="service-description">
+                        Odio aliquet, fringilla odio eget, tincidunt nunc duis aliquet pulvinar ante employees and organizations to support.
+                    </p>
+                </div>
+                
+                <div class="service-item">
+                    <img src="/assets/services3.svg" alt="Education Icon" class="service-icon">
+                    <h3 class="service-title">Education</h3>
+                    <p class="service-description">
+                        Odio aliquet, fringilla odio eget, tincidunt nunc duis aliquet pulvinar ante employees and organizations to support.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    </div>
+</body>
+</html>
