@@ -3,64 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Charitee - Give a Helping Hand</title>
+  <title>Document</title>
+    <!-- Google Fonts: Roboto -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <style>
-    /* Reset and base styling */
-* {
+    * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: Roboto, sans-serif;
 }
 
-.parent {
-  color: white;
-  background-color: white;
+ body {
+  width: 100%;
+  overflow-x: hidden;
 }
 
-/* Navbar */
+  /* navbar */
 .navbar {
   position: absolute;
   top: 0;
-  width: 1520px;
-  padding: 10px 60px;
+  width: 100%;
+  padding: 15px 60px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   z-index: 10;
 }
 
-/* Logo */
 .logo img {
-  width: 202px;
-  height: 48px;
+  width: 200px;
 }
 
-/* Nav links */
+/* Navigation Links */
 .nav-links {
-  display: flex;
   list-style: none;
+  display: flex;
   gap: 25px;
 }
 
-.nav-links li {
-  color: #fff;
-  font-weight: 500;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.nav-links li:hover {
-  color: #65C9BB;
-}
 .nav-links a {
   text-decoration: none;
-  color:#fff;
-  cursor: pointer;
-
+  color: white;
+  font-weight: 500;
 }
+
 .nav-links a:hover {
-   color: #65C9BB;
+  color: #65c9bb;
 }
 
 /* Right Section */
@@ -71,454 +61,420 @@
 }
 
 .phone {
+  color: white;
   font-size: 14px;
-  color: #fff;
 }
 
 /* Donate Button */
 .donate-btn {
   background: #ff3b30;
-  padding: 20px 30px;
-  color: #fff;
+  color: white;
+  border: none;
+  padding: 15px 25px;
   border-radius: 5px;
-  font-weight: 600;
-  border: 2px solid transparent; /* Prevent layout shift */
   cursor: pointer;
   display: flex;
   align-items: center;
   gap: 10px;
-  transition: 0.3s;
 }
 
 .donate-btn img {
   width: 18px;
-  height: 18px;
   filter: invert(1);
 }
 
 .donate-btn:hover {
-  background: #000;           
-  border: 2px solid #fff;     
-  color: #fff;               
+  background: black;
 }
 
-/* Hero Section */
+/* hero section */
 .hero {
-  position: relative;
   height: 950px;
-  overflow: hidden;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
   padding-left: 100px;
+  background-image: url(/assets/h1_hero1.jpg.webp);
+  background-size: cover;    
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-/* Hero Background Image */
+
 .hero-bg {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-/* Hero Content */
 .hero-content {
   position: relative;
   max-width: 600px;
-  z-index: 1;
   color: white;
-  padding: 40px;
 }
 
 .hero-content h1 {
   font-size: 60px;
-  font-weight: 700;
-  line-height: 1.2;
   margin-bottom: 20px;
-  
 }
 
 .hero-content p {
   font-size: 18px;
   margin-bottom: 30px;
-  color: #f0f0f0;
-
-  
 }
 
-/* Hero Button */
+/* Button */
 .btn {
   background: #52d1c6;
-  color: white;
-  padding: 15px 30px;
-  border-radius: 5px;
-  font-weight: 600;
   border: none;
+  padding: 15px 30px;
+  color: white;
+  border-radius: 5px;
   cursor: pointer;
-  transition: 0.3s;
 }
 
 .btn:hover {
   background: #3cb5ab;
 }
-/* program block */
 
+/* program section */
 .program-block {
- 
-  background-color: #fcf4f0;
-  padding: 100px 0; 
+  background: #fcf4f0;
+  padding: 100px 20px;
 }
 
 .program-content-container {
+  max-width: 1200px;
+  margin: auto;
   display: flex;
-  justify-content: center;
+  gap: 60px;
   align-items: center;
- 
-  max-width: 1200px; 
-  margin: 0 auto; 
-  gap: 60px; 
 }
 
-/* Image Column */
 .program-image img {
-  height: 444px;
-  
-  width: 556px; 
-  display: block;
-}
-
-/* Text Details Column */
-.program-details {
-  
+  max-width: 100%;
 }
 
 .program-label {
-  font-size: 16px;
-  font-weight: 500;
-  color: #52d1c6; 
-  margin-bottom: 5px;
+  color: #52d1c6;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  margin-bottom: 10px;
 }
 
 .program-details h2 {
   font-size: 40px;
-  font-weight: 700;
-  color: #263B5C;
-  line-height: 1.2;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .program-description {
-  font-size: 16px;
-  color: #777777;
-  line-height: 1.6;
-  margin-bottom: 35px;
+  color: #777;
+  margin-bottom: 30px;
 }
 
+/* Buttons */
 .program-buttons {
   display: flex;
   gap: 20px;
 }
 
-
 .btn-donate-now {
-  background: #ff6b4a; 
-  color: white;
-  padding: 15px 35px;
-  border-radius: 5px;
-  font-weight: 600;
+  background: #ff6b4a;
   border: none;
-  cursor: pointer;
-  transition: background-color 0.3s;
+  padding: 15px 30px;
+  color: white;
+  border-radius: 5px;
 }
 
-.btn-donate-now:hover {
-  background: none;
-  border: 1px solid #f15b43;
-  color: #f15b43; 
-}
-
-/* View Programs Button (Outline) */
 .btn-view-programs {
   background: transparent;
-  color: #f15b43;
-  padding: 15px 35px;
+  border: 1px solid #ff6b4a;
+  padding: 15px 30px;
+  color: #ff6b4a;
   border-radius: 5px;
-  font-weight: 600;
-  /* Matching the solid button's color for the border */
-  border: 1px solid #ff6b4a; 
-  cursor: pointer;
-  transition: all 0.3s;
 }
 
-.btn-view-programs:hover {
-  background: #ff6b4a;
-  color: white;
-}
-/* about-block */
+/* about section */
 .about-block {
- 
-  background-color: white;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding: 100px 20px;
 }
 
 .about-content-container {
+  max-width: 1200px;
+  margin: auto;
   display: flex;
-  justify-content: center;
+  gap: 60px;
   align-items: center;
   flex-direction: row-reverse;
-  max-width: 1200px; 
-  margin: 0 auto; 
-  gap: 60px; 
-}
-.about-image-container {
-    flex-shrink: 0; 
 }
 
-/* Image Column */
 .about-image-container img {
-  height: 493px;
-  
-  width: 576px; 
-  display: block;
-}
-
-/* Text Details Column */
-
-
-.about-lable {
-  font-size: 16px;
-  font-weight: 500;
-  color: #52d1c6; 
-  margin-bottom: 5px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  max-width: 100%;
 }
 
 .about-details h2 {
   font-size: 40px;
-  font-weight: 700;
-  color: #263B5C;
-  line-height: 1.2;
+  margin-bottom: 20px;
+}
+.about-lable {
+  color: #52d1c6;
+}
+.about-description {
+  color: #777;
   margin-bottom: 30px;
 }
 
-.about-description {
-  font-size: 16px;
-  color: #777777;
-  line-height: 1.6;
-  margin-bottom: 35px;
+.about-button {
+  background: #ff6b4a;
+  border: none;
+  padding: 15px 30px;
+  color: white;
+  border-radius: 5px;
+}
+/* donation-section */
+   #programs-section {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    gap: 25px;
+    margin: 100px 0px 100px 0px;
 }
 
-.about-buttons {
-  display: flex;
-  gap: 20px;
+.program-card {
+    max-width: 500px;
+    background-color:#FCF2EB;
+
 }
-.about-button {
-  background: #ff6b4a; 
-  color: white;
-  padding: 15px 35px;
-  border-radius: 5px;
-  font-weight: 600;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s;
+
+.program-card img {
+    width: 100%;
+    height: 250px;
 }
-.about-button:hover {
-   background: none;
-  border: 1px solid #f15b43;
-  color: #f15b43;
+
+.program-content {
+    padding: 30px;
 }
+
+.program-content h3 {
+    color: #263b5c;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    font-family: "Jost", sans-serif;
+}
+
+.program-content p {
+    color: #777;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.program-stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat .amount {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.stat .amount.goal {
+    color: #65C9BB;
+}
+
+.stat .amount.raised {
+    color: #65C9BB;
+}
+
+.stat .label {
+    color: #263b5c;
+    font-size: 14px;
+}
+.up-b1{
+    background-color: #F15B43;
+    color: #fff;
+    padding: 17px 35px;
+    font-size: 18px;
+    border: 2px solid #F15B43;
+}
+.up-b1:hover {
+    background-color: white;
+    color: #F15B43;
+}
+
+/* help section */
 .help-block {
- 
-  background-color: bisque;
-  padding-top: 100px;
-  padding-bottom: 100px; 
+  background: bisque;
+  padding: 100px 20px;
 }
 
 .help-content-container {
+  max-width: 1200px;
+  margin: auto;
   display: flex;
-  justify-content: center;
+  gap: 60px;
   align-items: center;
- 
-  max-width: 1200px; 
-  margin: 0 auto; 
-  gap: 60px; 
 }
 
-/* Image Column */
 .help-image img {
-  height: 536px;
-  
-  width: 548px; 
-  display: block;
-}
-
-/* Text Details Column */
-.help-details {
-  
-}
-
-.help-label {
-  font-size: 16px;
-  font-weight: 500;
-  color: #52d1c6; 
-  margin-bottom: 5px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  max-width: 100%;
 }
 
 .help-details h2 {
   font-size: 46px;
-  font-weight: 700;
-  color: #263B5C;
-  line-height: 1.2;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .help-description {
-  font-size: 18px;
-  color: #777777;
-  line-height: 1.6;
-  margin-bottom: 35px;
+  color: #777;
+  margin-bottom: 30px;
 }
+
 .button {
-    
-  background: #ff6b4a; 
-  color: white;
-  padding: 16px 28px;
-  border-radius: 5px;
-  font-weight: 600;
+  background: #ff6b4a;
   border: none;
-  cursor: pointer;
-  transition: background-color 0.3s;
+  padding: 15px 30px;
+  color: white;
+  border-radius: 5px;
 }
-.button:hover {
-    background: none;
-  border: 1px solid #f15b43;
-  color: #f15b43;
-}
-/* --- Section Layout & Background --- */
 
+/* helping section */
 .helping-today-section {
-    position: relative;
-    padding: 60px 20px; 
-    color: white; 
-    text-align: center; 
-    /* Set your background image here */
-    background-image: url(/assets/helpingtoday1.jpg);
+  background-image: url(/assets/helpingtoday1.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 80px 20px;
+  color: white;
+  text-align: center;
 }
-
-.content-wrapper {
-    max-width: 1200px; 
-    margin: 0 auto; 
-    position: relative;
-}
-
-/* --- Headings --- */
-
-.pre-heading {
-    margin-bottom: 5px;
-    font-size: 16px;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.main-heading {
-    margin-top: 0;
-    margin-bottom: 50px;
-    font-size: 40px;
-    font-weight: 700;
-}
-
-/* --- Service Columns Layout (Flexbox) --- */
 
 .service-container {
-    display: flex;
-    justify-content: space-between; 
-    align-items: flex-start; 
-    gap: 30px; 
-    padding: 0 40px; 
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
 }
 
-
 .service-item {
-    max-width: 300px; 
-    text-align: center;
-    padding: 20px;
+  max-width: 300px;
 }
 
 .service-icon {
-    width: 60px; /* Size of the icon */
-    height: 60px;
-    margin-bottom: 20px;
+  width: 60px;
+  margin-bottom: 20px;
 }
 
-.service-title {
-    margin-top: 0;
-    margin-bottom: 10px;
-    font-size: 20px;
-    font-weight: 700;
+/* FOOTER */
+.footer {
+  background-color: #263b5c;
+  color: white;
+  padding-top: 60px;
 }
 
-.service-description {
-    font-size: 14px;
-    line-height: 1.6;
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 0 20px;
+  flex-wrap: wrap;
 }
-footer {
-         background-color:#263B5C;
-         color: white;
-         display: flex;
-         justify-content: space-around;
-         align-items: flex-start;
-        padding: 50px 0;
-      }
 
-      footer div {
-         width: 250px;
-      }
 
-      ul {
-         list-style: none;
-         padding: 0;
-      }
-      #section1 {
-    background-color: #F15B43;
-    color: #fff ;
-    padding: 11px 20px;
-    font-size: 16px;
-    border-radius: 0px;
-    font-weight: 400;
-    cursor: pointer;
-      }
+.footer-col {
+  max-width: 260px;
+}
+
+
+.footer-logo {
+  width: 160px;
+  margin-bottom: 20px;
+}
+
+
+.footer-col h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+
+.footer-col p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #d9d9d9;
+  margin-bottom: 15px;
+}
+
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+
+.footer-btn {
+  background-color: #f15b43;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 10px;
+  
+}
+.footer-btn:hover{
+  background-color: #263b5c;
+  border: 1px solid white;
+
+}
+
+
+.footer-bottom {
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-bottom span {
+  color: #65c9bb;
+}
+
   </style>
-
-  <!-- Google Fonts: Roboto -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-  <!-- <link rel="stylesheet" href="style.css"> -->
 </head>
 <body>
   <div class="parent">
     <!-- Navigation Bar -->
   <header class="navbar">
     <div class="logo">
-    <img src="/assets/logo.png.webp" alt="">
+      <img src="/assets/logo.png.webp" alt="Charitee logo">
     </div>
 
     <nav>
       <ul class="nav-links">
         <li><a href="/Pages/home.html">Home</a></li>
-        <li>Who We Are?</li>
-        <li>Programs</li>
-        <li>About</li>
-        <li>Blog</li>
-        <li>Contact Us</li>
+        <li><a href="/Pages/whoWeAre.html">Who We Are ?</a></li>
+        <li><a href="/Pages/Programs.html">programs</a></li>
+        <li><a href="/Pages/About.html">About</a></li>
+        <li><a href="/Pages/Blog.html">Blog</a></li>
+        <li><a href="/Pages/Contact Us.html">Contact US</a></li>
       </ul>
     </nav>
 
@@ -533,7 +489,7 @@ footer {
 
   <!-- Hero Section -->
   <div class="hero">
-    <img src="/assets/h1_hero1.jpg.webp" alt="Helping hands" class="hero-bg">
+    <!-- <img src="assets/h1_hero1.jpg.webp" alt="Helping hands" class="hero-bg"> -->
     <div class="hero-content">
       <h1>Give a helping hand to those who need it!</h1>
       <p>When a child gets access to good food, it can change just about everything.</p>
@@ -576,6 +532,65 @@ footer {
     </div>
   </div>
 </div>
+<!-- donation-section -->
+  <div id="programs-section">
+        <div class="program-card">
+            <img src="/Assets/class-img1.jpg.webp" alt="Child behind fence">
+            <div class="program-content">
+                <h3>Help the ecosystems</h3>
+                <p>Sedac odio aliquet, fringilla odio eget, tincidunt nunc duis aliquet pulvinar ante start in life and the opportunity to learn.</p>
+                <div class="program-stats">
+                    <div class="stat">
+                        <span class="amount goal">$67,845</span>
+                        <span class="label">Goal</span>
+                    </div>
+                    <div class="stat">
+                        <span class="amount raised">$48,845</span>
+                        <span class="label">Raised</span>
+                    </div>
+                    <button class="up-b1">Donate</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="program-card">
+            <img src="/Assets/class-img2.jpg.webp" alt="Child with stick">
+            <div class="program-content">
+                <h3>Donate Vitamin B12 Program</h3>
+                <p>Sedac odio aliquet, fringilla odio eget, tincidunt nunc duis aliquet pulvinar ante start in life and the opportunity to learn.</p>
+                <div class="program-stats">
+                    <div class="stat">
+                        <span class="amount goal">$67,845</span>
+                        <span class="label">Goal</span>
+                    </div>
+                    <div class="stat">
+                        <span class="amount raised">$48,845</span>
+                        <span class="label">Raised</span>
+                    </div>
+                    <button class="up-b1">Donate</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="program-card">
+            <img src="/Assets/class-img3.jpg.webp" alt="Parent and child">
+            <div class="program-content">
+                <h3>View Savers In Deworm Program</h3>
+                <p>Sedac odio aliquet, fringilla odio eget, tincidunt nunc duis aliquet pulvinar ante start in life and the opportunity to learn.</p>
+                <div class="program-stats">
+                    <div class="stat">
+                        <span class="amount goal">$67,845</span>
+                        <span class="label">Goal</span>
+                    </div>
+                    <div class="stat">
+                        <span class="amount raised">$48,845</span>
+                        <span class="label">Raised</span>
+                    </div>
+                    <button class="up-b1">Donate</button>
+                </div>
+            </div>
+        </div>
+    </div>
 <!-- help block  -->
 <div class="help-block">
   <div class="help-content-container">
@@ -633,31 +648,58 @@ footer {
         </div>
 
     </div>
-      <footer>
-      <div>
-         <img src="/assets/logo.png.webp" alt="">
-         <p>When a child gets access to good food, it can change just about everything. Sed do eiusmod tempor incididunt
-            dolore magna aliqua.</p>
+  <footer class="footer">
+    <div class="footer-container">
+
+      
+      <div class="footer-col">
+        <img
+          src="https://preview.colorlib.com/theme/charitee/assets/img/logo/logo2_footer.png"
+          alt="Charitee Logo"
+          class="footer-logo"
+        />
+        <p>
+          When a child gets access to good food, it can change just about
+          everything. Sed do eiusmod tempor incididunt dolore magna aliqua.
+        </p>
       </div>
-      <div>
-         <h3>Navigation</h3>
-         <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>Blog</li>
-            <li>Contact</li>
-         </ul>
+
+      
+      <div class="footer-col">
+        <h3>Navigation</h3>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Services</li>
+          <li>Blog</li>
+          <li>Contact</li>
+        </ul>
       </div>
-      <div>
-         <h3>Contact Us</h3>
-         <p>4486 Richards Avenue, Modesto CA - 95354</p>
-         <p>209-818-6041</p>
-         <p>charity90@gmail.com</p>
+
+     
+      <div class="footer-col">
+        <h3>Contact Us</h3>
+        <p>4486 Richards Avenue,<br>Modesto CA - 95354</p>
+        <p>209-818-6041</p>
+        <p>charity90@gmail.com</p>
       </div>
-      <div>
-         <h3>Support</h3>
-         <p>When a child gets access to good food, it can change.</p>
-         <button id="section1">Join Us Today</button>
+
+      
+      <div class="footer-col">
+        <h3>Support</h3>
+        <p>When a child gets access to good food, it can change.</p>
+        <button class="footer-btn">Join Us Today</button>
       </div>
-   </footer>
+
+    </div>
+
+    
+    <div class="footer-bottom">
+      <p>
+        Copyright ©2026 All rights reserved |
+        This template is made with <span>♥</span> by Colorlib
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

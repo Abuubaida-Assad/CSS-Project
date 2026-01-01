@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+ body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+  /* navbar */
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 15px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+.logo img {
+  width: 200px;
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #65c9bb;
+}
+
+/* Right Section */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.phone {
+  color: white;
+  font-size: 14px;
+}
+
+/* Donate Button */
+.donate-btn {
+  background: #ff3b30;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.donate-btn img {
+  width: 18px;
+  filter: invert(1);
+}
+
+.donate-btn:hover {
+  background: black;
+}
+/* hero section */
+.hero {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  padding-left: 100px;
+  background-image: url(/assets/h2_hero1.jpg.webp);
+  background-size: cover;    
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.hero-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-content {
+  position: relative;
+  max-width: 600px;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* Button */
+.btn {
+  background: #52d1c6;
+  border: none;
+  padding: 15px 30px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #3cb5ab;
+}
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="/assets/logo.png.webp" alt="Charitee logo">
+    </div>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="/Pages/home.html">Home</a></li>
+        <li><a href="/Pages/whoWeAre.html">Who We Are ?</a></li>
+        <li><a href="/Pages/Programs.html">programs</a></li>
+        <li><a href="/Pages/About.html">About</a></li>
+        <li><a href="/Pages/Blog.html">Blog</a></li>
+        <li><a href="/Pages/Contact Us.html">Contact US</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-right">
+      <p class="phone">Call Us : 0 (78) 675 3674</p>
+      <button class="donate-btn">
+        <img src="/assets/heart-solid-full.svg" alt="heart icon">
+        Make A Donation
+      </button>
+    </div>
+  </header>
+    <!-- Hero Section -->
+  <div class="hero">
+    <!-- <img src="assets/h1_hero1.jpg.webp" alt="Helping hands" class="hero-bg"> -->
+    <div class="hero-content">
+      <h1>What we do ?</h1>
+    </div>
+  </div>
+</body>
+</html>
